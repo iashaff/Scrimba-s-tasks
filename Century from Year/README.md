@@ -1,0 +1,1 @@
+Task 4 of #JavaScriptmas from Scrimba. Using Math.ceil
