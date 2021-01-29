@@ -1,0 +1,52 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lemonchiffon;
+    text-align: center;
+    color: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    color: darkslategray;
+}
+
+p {
+    color: darkcyan;
+    margin: 0;
+}
+
+.filmbase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35em;
+}
+
+.film-poster {
+    width: 80px;
+    height: 100px;
+    padding-top: 10%;
+    transition: 1s;
+}
+
+.bkg-filmlist {
+    background: lightblue;
+    border-radius: 7px;
+    margin-bottom: 5%;
+}
+
+.filmlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 170px;
+}
+
+.bkg-filmlist:hover {
+    transform: scale(1.2);
+}

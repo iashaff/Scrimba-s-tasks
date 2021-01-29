@@ -1,0 +1,46 @@
+[
+    { title: 'Jaws',
+      poster: 'img/jaws.jpg',
+      rating: '7/10'
+    },
+    
+    { title: 'Aliens',
+      poster: 'img/aliens.jpg',
+      rating: '10/10'
+    },
+    
+    { title: 'Bad Santa',
+      poster: 'img/bad santa.jpg',
+      rating: '7/10'
+    },
+    
+    { title: 'Casablanca',
+      poster: 'img/casablanca.jpg',
+      rating: '7/10'
+    },
+    
+    { title: 'Ghost',
+      poster: 'img/ghost.jpg',
+      rating: '7/10'
+    },
+    
+    { title: 'Twister',
+      poster: 'img/twister.jpg',
+      rating: '7/10'
+    },
+      
+    { title: 'Legally Blonde',
+      poster: 'img/legally blonde.jpg',
+      rating: '7/10'
+    },
+    
+    { title: 'Elf',
+      poster: 'img/elf.jpg',
+      rating: '7/10'
+    },
+    
+    { title: 'Zoolander',
+      poster: 'img/zoolander.jpg',
+      rating: '7/10'
+    } 
+]
