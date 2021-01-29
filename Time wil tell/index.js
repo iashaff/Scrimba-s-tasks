@@ -1,4 +1,8 @@
-import { now } from './utility.js'
+const now = () => ({
+    hours: new Date().getHours(), 
+    minutes: new Date().getMinutes(), 
+    seconds: new Date().getSeconds()
+})
 console.log(now ());
 const getClockTemplate = id => `<div id="clock-${id}"" class="clock">
     <div class="hand second-hand" id="clock-${id}-second-hand"></div>

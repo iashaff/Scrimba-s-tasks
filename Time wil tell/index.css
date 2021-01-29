@@ -1,10 +1,10 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     background-color: #1c4559;
-    background: url(https://github.com/iashaff/Video-for-web/blob/master/tina-dawson-jAWfDKxRraI-unsplash.jpg?raw=true);
     height: 100vh;
     width: 100vw;
     justify-content: center;
@@ -20,9 +20,10 @@ html, body {
     align-items: center;
     position: relative;
     border-radius: 50%;
-    background: url(https://github.com/iashaff/Video-for-web/blob/master/clock.png?raw=true),
-    radial-gradient(circle, rgb(110, 66, 88) 0%, rgb(90, 37, 60) 15%, rgba(61, 14, 46) 40%); 
-    opacity: 0.95;  
+    background: url(https://github.com/iashaff/Video-for-web/blob/master/clock.png?raw=true), radial-gradient(circle, rgb(110, 66, 88) 0%, rgb(90, 37, 60) 15%, rgba(61, 14, 46) 40%);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.95;
 }
 
 .hand {
