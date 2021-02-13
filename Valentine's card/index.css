@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 450px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 5px;
+  background: #1A1E26; 
+}
+
+.valentine-text {
+    display: inline-block;
+    margin: 4% 4% 2% 7%;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    letter-spacing: 3;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2.5s infinite;    
+}
+
+@keyframes shine {
+  0% {
+    text-shadow: none;
+    color: aqua;
+  }
+  100% {
+    color: aqua;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+
+
+.heart {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 0 4%;
+    position: relative;
+    left: 35%;
+    top: 35%;
+    transform: rotate(45deg);
+}
+
+.heart:before,
+.heart::after {
+    content: "";
+    background: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.heart:before {
+    top: -55%;
+    left: 0;
+}
+
+.heart:after {
+    right: 55%;
+    top: 0;
+}
+
+@keyframes heartbeat {
+    0%  {
+        transform: scale(1)
+        rotate(45deg)
+        }
+    20% {
+        transform: scale(1.25)
+        rotate(45deg)
+        }
+    40% {
+        transform: scale(1.5)
+        rotate(45deg)
+        }
+}
+
+.heart {
+    animation: heartbeat 1s infinite;
+}
+
+.flicker {
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
+}
+
+.envelope {
+  background: #65e5d7;
+  position: absolute;
+  z-index: 1;
+  width: 360px;
+  height: 300px;
+  margin: 4% 4%;
+  left: 9%;
+  top: 20%;
+}
+
+.envelope:before {
+  position: absolute;
+  content: "";
+  width: 0;
+	height: 0;
+	border-left: 180px solid transparent;
+	border-right: 180px solid transparent;
+	border-top: 150px solid white;
+}
+
+.envelope:hover {
+ background: transparent;
+ transition: 0.9s; 
+}
+
+.envelope:hover::before {
+  border-top: transparent;
+  transition: 0.9s;
+}
