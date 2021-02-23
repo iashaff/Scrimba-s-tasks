@@ -1,0 +1,44 @@
+body {
+    background-color: #A7CECC;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    min-width: 250px;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    border-radius: 20px;
+    margin: 1% auto 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.button {
+    border-radius: 10px;
+    min-width: 200px;
+    height: 30px;
+    margin-bottom: 3%;
+    align-self: center;
+}
+
+#input {
+    margin: 20px auto;
+    height: 30px;
+    text-align: center;
+}
+
+#result {
+    color: #181A25;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+#dogbtn {
+    background: radial-gradient(circle, #FBF2EB, #6a5475);
+}
+
+#catbtn {
+    background: radial-gradient(circle, #FBF2EB, #765cad)
+}
