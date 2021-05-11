@@ -1,0 +1,104 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn {
+    min-width: 70px;
+    max-width: 200px;
+    margin: 1em;
+    padding: 1em 2em;
+    border-radius: 5px;
+    border-width: 2px;
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.btn:hover,
+.btn:focus {
+    cursor: pointer;
+}
+
+/* back button */
+.btn-back {
+    color: hotpink;
+    border-color: hotpink;
+    transition: box-shadow 1s ease;
+   
+    
+}
+
+/* refresh button */
+.btn-refresh {
+    color: orange;
+    border-color: orange;
+    transition-duration: 0.3s ease-out;
+}
+
+/* back next */
+.btn-next {
+    color: greenyellow;
+    border-color: greenyellow;
+    background: linear-gradient(to left, black 50%, greenyellow 50%) right;
+    background-size: 14em;
+    transition: .5s ease-out;
+    
+}
+
+.btn-back:hover,
+.btn-back:focus {
+     background-color: hotpink;
+     box-shadow: inset -8em 0  black;
+     color: black;
+     animation: text-color 1s;
+}
+
+
+.btn-next:hover,
+.btn-next:focus {
+    color: black;
+    background-position: left;
+    opacity: 0.7;
+}
+
+.btn-refresh:hover,
+.btn-refresh:focus {
+    animation-name: flash;
+    animation-duration: 0.5s;
+    
+    
+}
+
+
+@keyframes flash {
+    100% {
+        box-shadow: 0px 0px 1.5em orange;
+    }
+}
+
+@keyframes text-color {
+    0% {
+        color: black;
+    }
+    
+    100% {
+        color: hotpink;
+    }
+}
+
+
+
+
