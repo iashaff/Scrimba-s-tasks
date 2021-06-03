@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center; 
+     background-color: #171717;      
+}
+
+button {
+    border: 2px solid grey;
+    border-radius: 50%;
+    fill: white;
+    background-color: #2a2a2a;
+    min-width: 42px;
+    min-height: 42px;
+    max-width: 52px;
+    max-height: 52px; 
+    padding: 0.3em 0.5em;
+}
+
+button:hover,
+button:focus {
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+span, p {
+    color: #fff;
+}
+
+.movie-card {
+    cursor: pointer;
+    margin-top: 3em;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    max-height: 400px;
+}
+
+.preview-movie {
+    padding: 0.7em 0.7em; 
+}
+
+.buttons {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.play-btn {
+    background-color: #fff;
+    border: 1px solid transparent;
+}
+
+.play-btn:hover,
+.play-btn:focus {
+     background-color: #c9c5c5;
+}
+
+.down-btn {
+    margin-left: auto;
+}
+
+.plus-btn, 
+.thumbdown-btn,
+thumbup-btn,
+.age,
+.time,
+.quality {
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+}
+
+.movie-data,
+movie-tags {
+    margin: 0.25em 0.25em 0.5em 0;
+    padding-bottom: 0.5em;
+}
+
+.movie-tags {
+    margin-bottom: 1em;
+}
+
+.match-rating {
+   color: #46d369;
+}
+
+.age {
+    border: solid 1px rgba(255,255,255,0.4);
+    padding: 0 0.4em;
+}
+
+.quality {
+    border: solid 1px rgba(255,255,255,0.4);
+    padding: 0 0.4em;
+    font-size: 0.7em; 
+}
+
+.list-tags {
+    margin-left: 0.25em;
+}
+
+.list-tags::before {
+    content: "\2022";
+    color: #646464;
+    padding-right: .5vw;
+    font-size: 1.2em;
+    margin-right: 0.25em;    
+}
+
+.active-up {
+    fill: green;
+}
+.active-down {
+    fill: red;
+}
+
+.active-plus {
+    fill: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.active-block {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 0;
+}
+
+.background-block {
+    background-color: #171717;
+    overflow: auto;
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: column; 
+}
+
+.hidden-info {
+    color: #646464;
+}
+
+.contain-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
