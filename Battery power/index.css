@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+.container {
+  display: flex;
+  align-items: center;  
+}
+
+
+body {
+    justify-content: center;
+    background: #a185ab;
+    font-size: 24px;
+    height: 100vh;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #648d9e; 
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: #33b0a8;
+}
+
+.container {
+    flex-direction: column;
+    padding: 1em 2em;
+    border-radius: 10px;
+    background: white;
+    max-width: 400px;
+}
+
+meter {
+    height: 2em;
+    width: 10em
+}
+
+
+
+
