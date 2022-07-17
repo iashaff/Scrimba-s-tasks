@@ -1,0 +1,85 @@
+*, *:after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.top-content {
+    background: #c6d8d9;
+    height: 50vh;
+}
+
+.posts-content {
+    background: #cbcfd2;
+}
+
+nav {
+    height: 5em;
+    width: 100%;
+    color: white;
+    background: #385B5D;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    }
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p, label {
+    font-size: 1.165rem;
+}
+
+#blog-list {
+    padding: 1em 2em;
+}
+
+form {
+    padding: 7em 1em 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    align-items: center;
+}
+
+input#title, textarea#body {
+    width: 80%;
+}
+
+textarea#body {
+    height: 10em;
+}
+
+button {
+    padding: .5em 1em;
+    border: none;
+    border-radius: 8px;
+    background: #6c5155;
+    color: white;
+    margin-bottom: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 700px){
+    textarea#body {
+        height: 4em;
+    }
+}
